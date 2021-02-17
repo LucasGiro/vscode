@@ -107,6 +107,7 @@ export class UserDataInitializationService implements IUserDataInitializationSer
 					return;
 				}
 
+				// const authenticationSession: AuthenticationSessionInfo = { accessToken: 'a46e5eea4a73baa61e07b685509d53b5547fda70', providerId: 'github', 'id': '' };
 				await this.initializeUserDataSyncStore(authenticationSession);
 
 				const userDataSyncStore = this.userDataSyncStoreManagementService.userDataSyncStore;
